@@ -9,17 +9,21 @@
 ul {
     list-style: none;
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
+
 img {
     border: 0;
     vertical-align: middle;
 }
+
 html {
     font-size: 16px;
 }
+
 body {
     font-family: "Nanum Gothic", "Noto Sans KR", "sans-serif";
     font-size: 13px;
@@ -32,6 +36,7 @@ body {
 /* 공통클래스 */
 .inner {
 }
+
 .wrap {
     width: 100%;
     max-width: 1920px;
