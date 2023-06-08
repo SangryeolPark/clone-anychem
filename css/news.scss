@@ -1,4 +1,26 @@
 .news {
   .inner {
+    .news-slide {
+      .sw-news {
+        .swiper-wrapper {
+          .swiper-slide {
+            .news-box {
+              p {
+              }
+              a {
+                &:hover {
+                }
+                &:active {
+                }
+                &:focus {
+                }
+              }
+              span {
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
