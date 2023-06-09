@@ -42,7 +42,9 @@
               }
             }
             > p {
+              position: relative;
               line-height: 1.5;
+              z-index: 9;
               font: {
                 size: 27px;
                 weight: 700;

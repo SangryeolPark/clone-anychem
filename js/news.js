@@ -21,11 +21,9 @@ window.addEventListener('load', function () {
         <div class="swiper-slide">
           <div class="news-box">
             <a href="${data.link}">
-              <span>${data.cate}</span>
-              <p>
-                ${data.title}
-              </p>
-              <span><i class="fa-regular fa-clock"></i> ${data.date}</span>
+              <span class="news-cate">${data.cate}</span>
+              <p>${data.title}</p>
+              <span class="news-date"><i class="fa-regular fa-clock"></i> ${data.date}</span>
             </a>
           </div>
         </div>
@@ -34,7 +32,23 @@ window.addEventListener('load', function () {
       html += tag;
     });
 
-    console.log(html);
+    const newsWrap = document.querySelector('.sw-news .swiper-wrapper');
+    newsWrap.innerHTML = html;
+
+    new Swiper('.sw-news', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    });
   };
 
   getNews();
